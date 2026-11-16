@@ -1,19 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <title>ДЗ 3. Git та GitHub</title>
-</head>
-<body>
-    <h1>Команди термінала та Git</h1>
-    <ul>
-        <li><code>cd [шлях]</code> — перехід у вказану папку</li>
-        <li><code>git clone [url]</code> — клонування репозиторію на комп'ютер</li>
-        <li><code>git status</code> — перевірка стану репозиторію та змінених файлів</li>
-        <li><code>git checkout -b [назва_гілки]</code> — створення та перехід у нову гілку</li>
-        <li><code>git add .</code> — додавання всіх змін до індексу (підготовка до комміту)</li>
-        <li><code>git commit -m "коментар"</code> — збереження змін із описом</li>
-        <li><code>git push origin [назва_гілки]</code> — відправка змін у репозиторій на GitHub</li>
-    </ul>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Проста форма-анкета</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section>
+        <h1>Проста форма-анкета</h1>
+        <form>
+          <fieldset>
+            <legend>Заповніть ваші дані</legend>
+
+            <div>
+              <label for="name">Ваше ім'я:</label>
+              <input type="text" id="name" name="name" placeholder="Введіть своє ім'я" />
+            </div>
+
+            <div>
+              <label for="surname">Ваше прізвище:</label>
+              <input type="text" id="surname" name="surname" placeholder="Введіть своє прізвище" />
+            </div>
+
+            <div>
+              <label for="email">Електронна пошта:</label>
+              <input type="email" id="email" name="email" placeholder="Email" />
+            </div>
+
+            <div>
+              <label for="phone">Телефон:</label>
+              <input type="tel" id="phone" name="phone" placeholder="Номер телефону" />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Дані про ваш курс</legend>
+
+            <div>
+              <label for="course">Оберіть ваш курс</label>
+              <select id="course" name="course">
+                <option value="" disabled selected>Оберіть ваш курс</option>
+                <option value="frontend-basic">Front-end Basic</option>
+                <option value="frontend-pro">Front-end Pro</option>
+                <option value="react">React JS</option>
+                <option value="node">Node JS</option>
+              </select>
+            </div>
+
+            <div>
+              <p>Чи виконуєте ви домашнє завдання?</p>
+              <label>
+                <input type="radio" name="homework" value="yes" /> Так, виконую
+              </label>
+              <br />
+              <label>
+                <input type="radio" name="homework" value="no" /> Ні, не встигаю
+              </label>
+            </div>
+
+            <div>
+              <p>Додаткова інформація:</p>
+              <label>
+                <input type="checkbox" name="info" value="continue" /> Буду продовжувати навчання
+              </label>
+              <br />
+              <label>
+                <input type="checkbox" name="info" value="english" /> Додатково вивчаю англійську мову
+              </label>
+            </div>
+          </fieldset>
+
+          <div>
+            <textarea name="comment" placeholder="Comment" rows="4"></textarea>
+          </div>
+
+          <div>
+            <button type="submit">Зберегти відповідь</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
