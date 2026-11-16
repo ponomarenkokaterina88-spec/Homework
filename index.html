@@ -1,88 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Проста форма-анкета</title>
-   <link rel="stylesheet" href="styles/style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main>
-      <section>
-        <h1>Проста форма-анкета</h1>
-        <form>
-          <fieldset>
-            <legend>Заповніть ваші дані</legend>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Картка співробітника</title>
+    <style>
+        body {
+            text-align: center;
+            color: #909090;
+            font-family: Arial, sans-serif;
+            background-color: #f4f5f7;
+            margin: 0;
+            padding: 40px 20px;
+        }
 
-            <div>
-              <label for="name">Ваше ім'я:</label>
-              <input type="text" id="name" name="name" placeholder="Введіть своє ім'я" />
-            </div>
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
 
-            <div>
-              <label for="surname">Ваше прізвище:</label>
-              <input type="text" id="surname" name="surname" placeholder="Введіть своє прізвище" />
-            </div>
+        .card {
+            width: 400px;
+            padding: 16px;
+            border-radius: 16px;
+            box-shadow: 0 4px 30px #32326440;
+            background-color: #ffffff;
+            margin: 0 auto;
+            text-align: center;
+            box-sizing: border-box;
+        }
 
-            <div>
-              <label for="email">Електронна пошта:</label>
-              <input type="email" id="email" name="email" placeholder="Email" />
-            </div>
+        .card img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+        }
 
-            <div>
-              <label for="phone">Телефон:</label>
-              <input type="tel" id="phone" name="phone" placeholder="Номер телефону" />
-            </div>
-          </fieldset>
+        .card h3 {
+            color: #222;
+            margin: 16px 0 6px 0;
+            font-size: 20px;
+        }
 
-          <fieldset>
-            <legend>Дані про ваш курс</legend>
+        .card .role {
+            font-weight: bold;
+            color: #444;
+            margin-bottom: 8px;
+        }
 
-            <div>
-              <label for="course">Оберіть ваш курс</label>
-              <select id="course" name="course">
-                <option value="" disabled selected>Оберіть ваш курс</option>
-                <option value="frontend-basic">Front-end Basic</option>
-                <option value="frontend-pro">Front-end Pro</option>
-                <option value="react">React JS</option>
-                <option value="node">Node JS</option>
-              </select>
-            </div>
+        .card .description {
+            font-size: 14px;
+            line-height: 1.4;
+            margin-bottom: 16px;
+        }
 
-            <div>
-              <p>Чи виконуєте ви домашнє завдання?</p>
-              <label>
-                <input type="radio" name="homework" value="yes" /> Так, виконую
-              </label>
-              <br />
-              <label>
-                <input type="radio" name="homework" value="no" /> Ні, не встигаю
-              </label>
-            </div>
+        .card hr {
+            border: none;
+            border-top: 1px solid #e0e0e0;
+            margin: 16px 0 12px 0;
+        }
 
-            <div>
-              <p>Додаткова інформація:</p>
-              <label>
-                <input type="checkbox" name="info" value="continue" /> Буду продовжувати навчання
-              </label>
-              <br />
-              <label>
-                <input type="checkbox" name="info" value="english" /> Додатково вивчаю англійську мову
-              </label>
-            </div>
-          </fieldset>
+        .card-footer {
+            text-align: right;
+        }
 
-          <div>
-            <textarea name="comment" placeholder="Comment" rows="4"></textarea>
-          </div>
+        .card a {
+            color: #5d5dff;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+        }
 
-          <div>
-            <button type="submit">Зберегти відповідь</button>
-          </div>
-        </form>
-      </section>
-    </main>
-    <footer></footer>
-  </body>
+        .card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Картка співробітника</h1>
+
+    <div class="card">
+        <img src="kot.jpg" alt="Фото профілю">
+        
+        <h3>Катерина Пономаренко</h3>
+        <div class="role">QA Manual / Веб-розробник</div>
+        <div class="description">Вивчаю ручне тестування та веб-розробку, пишу код, працюю з гілками в Git та створюю проєкти на GitHub.</div>
+        
+        <hr>
+        
+        <div class="card-footer">
+            <a href="https://github.com/ponomarenkokaterina88-spec" target="_blank">Детальніше</a>
+        </div>
+    </div>
+
+</body>
 </html>
