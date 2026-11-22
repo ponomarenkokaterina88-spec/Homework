@@ -1,19 +1,122 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>ДЗ 3. Git та GitHub</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design and layout</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <h1>Команди термінала та Git</h1>
-    <ul>
-        <li><code>cd [шлях]</code> — перехід у вказану папку</li>
-        <li><code>git clone [url]</code> — клонування репозиторію на комп'ютер</li>
-        <li><code>git status</code> — перевірка стану репозиторію та змінених файлів</li>
-        <li><code>git checkout -b [назва_гілки]</code> — створення та перехід у нову гілку</li>
-        <li><code>git add .</code> — додавання всіх змін до індексу (підготовка до комміту)</li>
-        <li><code>git commit -m "коментар"</code> — збереження змін із описом</li>
-        <li><code>git push origin [назва_гілки]</code> — відправка змін у репозиторій на GitHub</li>
-    </ul>
+
+  <div class="top-section">
+    <div class="container">
+      <header>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="#top" class="active">HOMEPAGE</a></li>
+            <li><a href="#about">ABOUT AUTHOR</a></li>
+            <li><a href="#works">WORKS</a></li>
+            <li><a href="#process">PROCESS</a></li>
+            <li><a href="#contacts">CONTACTS</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="hero" id="top">
+        <h1>Design and layout</h1>
+        <p>Lorem Ipsum is fish text often used in print and web design. Lorem Ipsum has been the standard "fish" for Latin texts since the early 16th century.</p>
+        <a href="#contacts" class="btn">WRITE ME</a>
+      </section>
+    </div>
+  </div>
+
+  <main>
+    <section class="about" id="about">
+      <div class="container">
+        <h2>About me</h2>
+        <p>Lorem Ipsum is fish text often used in print and web design. Lorem Ipsum has been the standard "fish" for Latin texts since the early 16th century.</p>
+      </div>
+    </section>
+
+    <section class="stats" id="works">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <rect x="3" y="4" width="18" height="14" rx="1"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="18" x2="12" y2="21"/>
+            </svg>
+            <div class="stat-number">40+</div>
+            <div class="stat-label">projects</div>
+          </div>
+          <div class="stat-item">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <rect x="3" y="4" width="18" height="14" rx="1"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="18" x2="12" y2="21"/>
+            </svg>
+            <div class="stat-number">40+</div>
+            <div class="stat-label">projects</div>
+          </div>
+          <div class="stat-item">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <rect x="3" y="4" width="18" height="14" rx="1"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="18" x2="12" y2="21"/>
+            </svg>
+            <div class="stat-number">40+</div>
+            <div class="stat-label">projects</div>
+          </div>
+          <div class="stat-item">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <rect x="3" y="4" width="18" height="14" rx="1"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="18" x2="12" y2="21"/>
+            </svg>
+            <div class="stat-number">40+</div>
+            <div class="stat-label">projects</div>
+          </div>
+          <div class="stat-item">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <rect x="3" y="4" width="18" height="14" rx="1"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="18" x2="12" y2="21"/>
+            </svg>
+            <div class="stat-number">40+</div>
+            <div class="stat-label">projects</div>
+          </div>
+          <div class="stat-item">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <rect x="3" y="4" width="18" height="14" rx="1"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="18" x2="12" y2="21"/>
+            </svg>
+            <div class="stat-number">40+</div>
+            <div class="stat-label">projects</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process" id="process">
+      <div class="container">
+        <h2>How do I work</h2>
+        <p class="subtitle">Lorem Ipsum is fish text often used in print and web design. Lorem Ipsum has been the standard "fish" for Latin texts since the early 16th century.</p>
+
+        <div class="video-box">
+          <img src="images/code-preview.png" alt="How do I work preview">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="container">
+      <div class="footer-author">John Smith</div>
+      <div class="footer-copy">(c) 2018. All rights reserved.</div>
+    </div>
+  </footer>
+
 </body>
 </html>
